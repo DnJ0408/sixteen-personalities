@@ -27,7 +27,9 @@ const Home = () => {
         <Link
           to={"/login"}
           className="bg-red-600 text-white rounded-lg px-4 py-2 hover:bg-red-700 mt-8
-                  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+          onClick={() => alert("로그인이 필요합니다. 로그인 페이지로 이동")}
+        >
           Take the Test
         </Link>
       </main>
