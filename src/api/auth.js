@@ -1,8 +1,25 @@
+import axios from "axios"
 
-const auth = () => {
-  return (
-    <div>auth</div>
-  )
+const API_URL = axios.create({
+  baseURL: "https://www.nbcamp-react-auth.link"
+});
+
+export const register = async (userData) => {
+  const response = await axios.post(`${API_URL}/register`, userData);
+  return response.data;
 }
 
-export default auth
+export const login = async (userData) => {
+  const response = await axios.post(`${API_URL}/login?expiresIn=1h`, userData);
+  return response.data;
+};
+
+export const getUserProfile = async (token) => {
+  const response = await axios.get(`${API_URL}/user`, token);
+  return response.data;
+};
+
+export const updateProfile = async (formData) => {
+  const response = await axios.patch(`${API_URL}/profile`, formData)
+  return response.data;
+};
