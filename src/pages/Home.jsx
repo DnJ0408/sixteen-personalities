@@ -5,17 +5,6 @@ import SectionCard from "../components/SectionCard"
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="flex justify-between items-center p-4 border-b">
-        <Link to={"/"} className="text-xl font-bold">
-          Sixteen Personalities
-        </Link>
-        <nav>
-          <Link to={"/login"}>
-            Login
-          </Link>
-        </nav>
-      </header>
-
       <main className="flex flex-col items-center mt-8 px-4">
         <h1 className="text-3xl font-semibold">
           무료 성격 테스트
