@@ -7,7 +7,6 @@ import Test from "../pages/Test"
 import TestResults from "../pages/TestResults"
 import Layout from "../components/Layout"
 import useAuthStore from "../zustand/authStore"
-import TestResults from "../pages/TestResults"
 
 const Router = () => {
 
