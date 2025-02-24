@@ -4,9 +4,10 @@ import Login from "../pages/Login"
 import Profile from "../pages/Profile"
 import Signup from "../pages/Signup"
 import Test from "../pages/Test"
-import Results from "../pages/Results"
+import TestResults from "../pages/TestResults"
 import Layout from "../components/Layout"
 import useAuthStore from "../zustand/authStore"
+import TestResults from "../pages/TestResults"
 
 const Router = () => {
 
@@ -34,7 +35,7 @@ const Router = () => {
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
           <Route path="/test" element={<Test />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/testresults" element={<TestResults />} />
         </Route>
 
       </Routes>
