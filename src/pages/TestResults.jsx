@@ -1,6 +1,11 @@
+import TestResultList from "../components/TestResultList"
+
 const TestResults = () => {
+
   return (
-    <div>TestResults</div>
+    <div>
+      <TestResultList />
+    </div>
   )
 }
 
