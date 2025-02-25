@@ -4,9 +4,7 @@ const resource = "testResults"
 const API_URL = `${domain}/${resource}`
 
 export const getTestResults = async () => {
-  // 테스트 결과를 요청하고 response에 담는다.
   const response = await axios.get(API_URL);
-  console.log(response);
   return response.data;
 };
 
