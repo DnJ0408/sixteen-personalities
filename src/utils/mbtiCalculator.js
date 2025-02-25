@@ -32,7 +32,7 @@ export const mbtiDescriptions = {
   INTP: "INTP: 세상의 진리를 탐구하는 철학자! INTP는 항상 새로운 아이디어와 이론을 탐구하는 사람들입니다. 이들은 '왜?'라는 질문을 끊임없이 던지며, 세상의 모든 것을 논리적으로 이해하려고 해요. 그러나 가끔은 너무 생각에 빠져서 현실과 동떨어질 때가 있어요. 그래도 이들의 지식과 통찰력은 언제나 놀라움을 줍니다.",
 };
 
-const mbtiCalculator = (answers) => {
+export const mbtiCalculator = (answers) => {
   // 각 MBTI 유형에 대한 점수 초기화
   const scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
 
